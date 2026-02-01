@@ -4,6 +4,7 @@
 ClearAlert is an **offline-resilient emergency alert system** designed to ensure people receive clear, accessible, and personalized alerts during extreme weather — even when internet connectivity fails.
 
 Built for **ElleHacks 2026** under the theme **Tech for Equity & Social Good**.
+ClearAlert is driven to solve **Challenge 2: Sustainability🌱💭** @ ElleHacks'26
 
 ---
 
@@ -44,7 +45,7 @@ ClearAlert addresses this gap by delivering **multilingual audio alerts locally*
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **TypeScript + React**
+- **TypeScript + React + Next.js**
 - Location-based input & personalization UI
 
 ### Backend
@@ -58,9 +59,36 @@ ClearAlert addresses this gap by delivering **multilingual audio alerts locally*
 
 ### Generative AI
 - **ElevenLabs** – multilingual, natural-sounding voice alerts (pre-generated & cached)
-- **Google Gemini** – personalized emergency recommendations based on user context (medical needs, disabilities, household type)
+- **Google Gemini API** – personalized emergency recommendations based on user context (medical needs, disabilities, household type)
+
+### Other APIs used to fetch realtime alert data
+- **OpenStreetMap Nominatim API** : Free geocoding service, converts location text (city, postal code) to coordinates
+Returns country codes, state/province info
+- **Environment Canada GeoMet OGC API** (Canada) : Canadian government weather alerts
+- **GDACS (Global Disaster Alert and Coordination System)** : UN-backed global disaster monitoring, covers earthquakes, floods, cyclones worldwide
+  
+---
+## Algorithms & Logic 
+
+**Haversine Formula**
+
+- Calculates distance between two geographic coordinates (lat/lon)
+- Used to filter GDACS alerts by proximity (within 300km)
+
+
+**Alert Severity Mapping**
+
+- Normalizes severity levels from different sources to unified scale: `low`, `moderate`, `severe`, `extreme` on the website
+- Maps NWS severity, GDACS alert levels, and Environment Canada urgency
+
+
+**24-Hour Date Filtering**
+
+- Validates alert timestamps to only show recent alerts
+- Filters out stale/expired alerts
 
 ---
+
 
 ## 🧩 System Architecture (High-Level)
 
