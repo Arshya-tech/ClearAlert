@@ -64,4 +64,27 @@ ClearAlert addresses this gap by delivering **multilingual audio alerts locally*
 ---
 
 ## 🧩 System Architecture (High-Level)
+Web App (React)
+↓
+Backend (Flask)
+↓
+Raspberry Pi (polls every 5s)
+↓
+Local Audio Playback (cached MP3s)
+
+---
+
+## 🏆 Accomplishments
+- Built a fully functional **end-to-end prototype**
+- Implemented **offline caching** for emergency reliability
+- Delivered **personalized, multilingual audio alerts**
+- Designed explicitly for vulnerable communities
+
+---
+
+## 🔮 What’s Next
+- Integrate live weather APIs for real deployments
+- Expand accessibility options (slower speech, visual indicators)
+- Add SMS / mesh fallback communication
+- Pilot with community organizations and real users
 
