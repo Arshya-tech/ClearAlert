@@ -1,7 +1,7 @@
 # 🚨 ClearAlert
 **Offline-First Emergency Alerts for Vulnerable Communities**
 
-ClearAlert is an **offline-resilient emergency alert system** designed to ensure people receive **clear, accessible, and personalized alerts** during extreme weather — even when internet connectivity fails.
+ClearAlert is an **offline-resilient emergency alert system** designed to ensure people receive clear, accessible, and personalized alerts during extreme weather — even when internet connectivity fails.
 
 Built for **ElleHacks 2026** under the theme **Tech for Equity & Social Good**.
 
@@ -58,18 +58,18 @@ ClearAlert addresses this gap by delivering **multilingual audio alerts locally*
 
 ### Generative AI
 - **ElevenLabs** – multilingual, natural-sounding voice alerts (pre-generated & cached)
-- **Google Gemini** – personalized emergency recommendations based on user context
-  (medical needs, disabilities, household type)
+- **Google Gemini** – personalized emergency recommendations based on user context (medical needs, disabilities, household type)
 
 ---
 
 ## 🧩 System Architecture (High-Level)
-Web App (React)
-↓
-Backend (Flask)
-↓
-Raspberry Pi (polls every 5s)
-↓
+
+Web App (React)<br>
+↓<br>
+Backend (Flask)<br>
+↓<br>
+Raspberry Pi (polls every 5s)<br>
+↓<br>
 Local Audio Playback (cached MP3s)
 
 ---
