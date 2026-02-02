@@ -102,6 +102,14 @@ Local Audio Playback (cached MP3s)
 
 ---
 
+
+## Data Flow Diagram
+<img width="520" height="1080" alt="ClearAlert_DataFlowDiagram" src="https://github.com/user-attachments/assets/0a8e5d8c-d6b0-4edd-9a72-ec7742c40415"/>
+
+
+---
+
+
 ## 🏆 Accomplishments
 - Built a fully functional **end-to-end prototype**
 - Implemented **offline caching** for emergency reliability
